@@ -1,0 +1,35 @@
+/* GENERALS PARAMETERS ------------------------*/
+	
+	:root
+	{
+
+	/* FONT SIZES ------------------------*/
+		--top_title_font_size : 24px ;
+		--question_font_size : 12px;
+		--response_font_size : 9px;
+
+		--faq_font_family : 'Roboto', sans-serif;
+
+	/* SCREEN SIZES ------------------------*/
+		--desktop_min_width : 800px;
+		--tablet_max_width : 799px;		
+		--tablet_min_width : 375px;
+		--smartphone_max_width : 374px;
+
+	/* TEXT COLORS ------------------------*/
+		/* PRIMARY ------------------------*/
+			--very_dark_desatured_blue: hsl(238, 29%, 16%);
+			--soft_red: hsl(14, 88%, 65%);
+
+		/* NEUTRAL ------------------------*/
+			--very_dark_grayish_blue: hsl(237, 12%, 33%);
+			--dark_grayish_blue: hsl(240, 6%, 50%);
+
+	/* BACKGROUND COLORS ------------------------*/
+		--soft_violet: hsl(273, 75%, 66%);
+		--soft_blue: hsl(240, 73%, 65%);
+
+	/* DIVIDERS COLORS ------------------------*/
+		--light_grayish_blue: hsl(240, 5%, 91%);
+
+	}
