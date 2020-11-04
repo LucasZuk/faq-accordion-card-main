@@ -1,5 +1,6 @@
-let faqNode = document.getElementsbyClassName("faq")[0];
+let faqNode = document.getElementsByClassName("faq")[0];
 
+/* CREATE QUESTION / RESPONSE BLOC */
 class faqBloc
 {
 	constructor(question, response)
@@ -8,16 +9,18 @@ class faqBloc
 		this.response = response;
 	}
 
-	publishFaqBloc()
+	/* SIMPLE FUNCTION IN ORDER TO PUBLISH THE BLOC */
+	publishFaqBloc() 
 	{
+
 		let unit = document.createElement("div");
 		let question = document.createElement("li");
 		let arrow = document.createElement("img");
 		let response = document.createElement("p");
 
-		question.innerText = question;
-		response.innerText = response;
-		arrow.src = "../images/icon-arrow-down.svg";
+		question.innerHTML = this.question;
+		response.innerHTML = this.response;
+		arrow.src = "./images/icon-arrow-down.svg";
 		arrow.alt = ">"
 		
 		unit.classList.add("faq__unit");
@@ -28,59 +31,20 @@ class faqBloc
 		faqNode.append(unit);
 		unit.append(question);
 		question.append(arrow);
-		unit.append(response);
-
-
-		
+		unit.append(response);	
 	}
 }
 
+/* LIST OF ALL THE FAQ QUESTION/RESPONSE */
+let faq = [];
+faq.push(new faqBloc("How many team members can I invite?", "ou can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."));
+faq.push(new faqBloc("What is the maximum file upload size?", "No more than 2GB. All files in your account must fit your allotted storage space."));
+faq.push(new faqBloc("How do I reset my password?", "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you."));
+faq.push(new faqBloc("Can I cancel my subscription?", "Yes! Send us a message and we’ll process your request no questions asked."));
+faq.push(new faqBloc("Do you provide additional support?", "Chat and email support is available 24/7. Phone lines are open during normal business hours."));
 
-const faq[0] = new faqBloc("How many team members can I invite?" , "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.");
-const faq[1] = new faqBloc("How many team members can I invite?" , "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.");
-
-// <div class="faq__unit">
-//         <li class="faq_question">
-//           <h2 class="faq__question--layout"> How many team members can I invite? </h2>
-//           <img src="./images/icon-arrow-down.svg" alt=">" class="faq__icon-arrow"/>
-//         </div>
-//         <p class="faq__response faq__response--layout">You can invite up to 2 additional users on the Free plan. There is no limit on 
-//       team members for the Premium plan.</p>
-//       </div>
-
-//       <!-- QUESTION / RESPONSE BLOC-->
-//       <div>
-//         <div>
-//           <h2>What is the maximum file upload size?</h2>
-//           <img src="./images/icon-arrow-down.svg" alt=">" class="icon-arrow"/>
-//         </div>
-//         <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-//       </div>
-
-//       <!-- QUESTION / RESPONSE BLOC-->
-//       <div>
-//         <div>
-//           <h2>How do I reset my password?</h2>
-//           <img src="./images/icon-arrow-down.svg" alt=">" class="icon-arrow"/>
-//         </div>
-//         <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-//       A reset link will be emailed to you.</p>  
-//       </div>
-
-//       <!-- QUESTION / RESPONSE BLOC-->
-//       <div>
-//         <div>
-//           <h2>Can I cancel my subscription?</h2>
-//           <img src="./images/icon-arrow-down.svg" alt=">" class="icon-arrow"/>
-//         </div>
-//         <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-//       </div>
-
-//       <!-- QUESTION / RESPONSE BLOC-->
-//       <div>
-//         <div>
-//           <h2>Do you provide additional support?</h2>
-//           <img src="./images/icon-arrow-down.svg" alt=">" class="icon-arrow"/>
-//         </div>
-//         <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-//       </div>
+/* PUBLICATION OF ALL THE BLOCS */
+for (var i=0; i < faq.length ; i++)
+{
+	faq[i].publishFaqBloc();
+}
