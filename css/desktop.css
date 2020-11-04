@@ -1,0 +1,28 @@
+/* DESKTOP PARAMETERS ------------------------*/
+
+@media screen and (min-width: 800px)
+{
+
+	:root
+	{
+		/* SIZE ------------------------*/
+
+		--faq_width : 76.7em;
+		--faq_height : 42.42em;
+
+		--illustration_width: 32.5em;
+
+		/* BACKGROUND ------------------------*/
+		--faq_background_color : white;
+		--illustration_background_image : url("../images/bg-pattern-desktop.svg");
+
+		/* MARGIN ------------------------*/
+		--faq_margin_top : 9.75em;
+
+		/* PADDING ------------------------*/
+
+		/* BORDER ------------------------*/
+		--faq_border_radius : 1.75em;
+
+	}
+}

@@ -33,3 +33,60 @@
 		--light_grayish_blue: hsl(240, 5%, 91%);
 
 	}
+
+/* NODE ELEMENTS CSS ------------------------*/
+	
+	body
+	{
+		font-size: var(--question_font_size);
+		background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+		width: 100vw;
+		height: 100vh;
+
+	}
+
+/* FAQ ------------------------*/	
+	.faq
+	{	
+
+		display: flex;
+	}
+
+	.faq--layout
+	{
+		width: var(--faq_width);
+		height: var(--faq_height);
+
+		background-color: var(--faq_background_color);
+
+		border-radius: var(--faq_border_radius);
+
+		box-shadow: var(--faq_box_shadow);
+
+		margin-right: auto;
+		margin-left : auto;
+		margin-top: var(--faq_margin_top);
+	}
+
+/* ILLUSTRATION ------------------------*/
+	
+	.illustration
+	{
+		display: flex;
+		align-items: center;
+
+		position: relative;
+	}
+
+	.illustration--layout
+	{
+		width: var(--illustration_width);
+		background-image: var(--illustration_background_image);
+	}
+
+	.illustration__illustration-box
+	{
+		position: absolute;
+		left: 82px;
+	}
