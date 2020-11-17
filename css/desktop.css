@@ -14,7 +14,7 @@
 
 		--faq_width : 100%;
 
-		--question_min_width: 25em;
+		--question_min_width: 30em;
 
 		--woman_img_height: 100%;
 
@@ -22,6 +22,7 @@
 		--body_background_color : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 		--global_content_background_color : white;
 		--illustration_background_image : url("../images/bg-pattern-desktop.svg");
+		--global_content_box_shadow : 0em 2em 2em rgba(0,0,0,10%) ;
 
 		/* MARGIN ------------------------*/
 		--global_content_margin_top : 9.75em;
