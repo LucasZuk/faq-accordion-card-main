@@ -1,0 +1,69 @@
+/* DESKTOP PARAMETERS ------------------------*/
+
+@media screen and (max-width: 429px)
+{
+
+	:root
+	{
+		/* SIZE ------------------------*/
+
+		--global_content_width : 27.33em;
+		--global_content_height : 44.58em;
+
+		--illustration_width: 19.83em;
+
+		--faq_width : 80%;
+
+		--question_min_width: 100%;
+
+		--woman_img_height: 17.67em;
+
+		/* BACKGROUND ------------------------*/
+		--body_background_color : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+		--global_content_background_color : white;
+		--illustration_background_image : url("../images/bg-pattern-desktop.svg");
+
+		/* MARGIN ------------------------*/
+		--global_content_margin_top : 12.25em;
+
+		--faq_margin_left : 10%;
+		--faq_margin_right : 10%;
+		--faq_margin_top : 10.75em;
+		--faq_margin_bottom : 4em;
+
+		--faq_title_margin_bottom : 1.42em;
+		--faq_title_margin_right: auto;
+		--faq_title_margin_left: auto;
+
+		/* PADDING ------------------------*/
+		--question_padding_bottom : 1.5em;
+		--question_padding_top : 1.24em;
+
+		/* BORDER ------------------------*/
+		--global_content_border_radius : 1.75em;
+
+		--question_border_bottom : solid;
+		--question_border_width : thin;
+		--question_border_color : hsl(0, 0%, 88%);
+
+		/* POSITION ------------------------*/
+
+		--illustration_box_right : 290px;
+		--illustration_box_top : 200px;
+
+		--woman_img_position : absolute;
+		--woman_img_right : 3.54em;
+		--woman_img_top : -250px;
+		--woman_img_overflow : none;
+
+		--faq_text_align : center;
+
+		--faq_arrov_top :1.5em;
+
+
+		/*  FLEXBOX ------------------------*/
+
+		--global_content_flex_direction : column;
+
+	}
+}

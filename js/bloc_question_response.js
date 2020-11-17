@@ -26,18 +26,18 @@ class faqBloc
 		unit.classList.add("faq__unit");
 		question.classList.add("faq__question", "faq__question--layout");
 		arrow.classList.add("faq__arrow", "faq__arrow--animation");
-		response.classList.add("faq__response", "faq__response--layout");
+		response.classList.add("faq__response", "faq__response--layout", "faq__response-unselected");
 
 		faqNode.append(unit);
 		unit.append(question);
 		question.append(arrow);
-		unit.append(response);	
+		question.append(response);	
 	}
 }
 
 /* LIST OF ALL THE FAQ QUESTION/RESPONSE */
 let faq = [];
-faq.push(new faqBloc("How many team members can I invite?", "ou can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."));
+faq.push(new faqBloc("How many team members can I invite?", "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."));
 faq.push(new faqBloc("What is the maximum file upload size?", "No more than 2GB. All files in your account must fit your allotted storage space."));
 faq.push(new faqBloc("How do I reset my password?", "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you."));
 faq.push(new faqBloc("Can I cancel my subscription?", "Yes! Send us a message and we’ll process your request no questions asked."));

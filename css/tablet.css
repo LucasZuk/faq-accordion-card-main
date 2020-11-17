@@ -1,0 +1,52 @@
+/* DESKTOP PARAMETERS ------------------------*/
+
+@media screen and (max-width: 829px) and (min-width: 430px)
+{
+
+	:root
+	{
+		/* SIZE ------------------------*/
+
+		--global-content_width : 76.7em;
+		--global-content_height : 42.42em;
+
+		--illustration_width: 32.5em;
+
+		--question_min_width: 25em;
+
+		/* BACKGROUND ------------------------*/
+		--body_background_color : linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+		--global-content_background_color : white;
+		--illustration_background_image : url("../images/bg-pattern-desktop.svg");
+
+		/* MARGIN ------------------------*/
+		--global_content_margin_top : 9.75em;
+
+		--faq_margin_left : 7.17em;
+		--faq_margin_right : 7.92em;
+		--faq_margin_top : 5.0em;
+		--faq_margin_bottom : 6.92em;
+
+		--faq_title_margin_bottom : 1em;
+
+		/* PADDING ------------------------*/
+		--question_padding_bottom : 1.5em;
+		--question_padding_top : 1.24em;
+
+		/* BORDER ------------------------*/
+		--global-content_border_radius : 1.75em;
+
+		--question_border_bottom : solid;
+		--question_border_width : thin;
+		--question_border_color : hsl(0, 0%, 88%);
+
+		/* POSITION ------------------------*/
+
+		--illustration_box_right : 290px;
+		--illustration_box_top : 200px;
+
+		--woman_img_right : 0px;
+		--woman_img_top : 70px;
+
+	}
+}
